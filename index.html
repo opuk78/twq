@@ -48,6 +48,7 @@
       padding: 20px;
       max-width: 1200px;
       margin: auto;
+      flex-wrap: wrap;
     }
 
     .column {
@@ -57,6 +58,7 @@
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       border: 1px solid #e4d6a7;
+      min-width: 250px;
     }
 
     .center-column {
@@ -83,6 +85,18 @@
       border-radius: 8px;
     }
 
+    table {
+      width: 100%;
+      font-size: 1.3em;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #e4d6a7;
+    }
+
     footer {
       margin-top: 40px;
       padding: 30px;
@@ -93,6 +107,7 @@
 
     footer p {
       margin: 5px 0;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -116,12 +131,32 @@
 
     <div class="column center-column">
       <h2>Guests Arriving Today</h2>
-      <ul>
-        <li>Room N1 -- Thomas Müller & Thomas Müller</li>
-        <li>Room N2 -- Claire Dubois & Claire Dubois</li>
-        <li>Room N3 -- Michael Johnson & Michael Johnson</li>
-        <li>Room N4 -- Michael Johnson & Michael Johnson</li>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Room</th>
+            <th>Guests</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Room N1</td>
+            <td>Thomas Müller & Thomas Müller</td>
+          </tr>
+          <tr>
+            <td>Room N2</td>
+            <td>Claire Dubois & Claire Dubois</td>
+          </tr>
+          <tr>
+            <td>Room N3</td>
+            <td>Michael Johnson & Michael Johnson</td>
+          </tr>
+          <tr>
+            <td>Room N4</td>
+            <td>Michael Johnson & Michael Johnson</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="column">
