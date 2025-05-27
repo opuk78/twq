@@ -10,7 +10,9 @@
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
-      background: linear-gradient(to bottom, #fff8f0, #f8f4ed);
+      background: url('crown.png') no-repeat center center fixed;
+      background-size: 300px;
+      background-color: #fff8f0;
       color: #3a2c1b;
       text-align: center;
     }
@@ -32,33 +34,65 @@
       color: #bfa046;
     }
 
+    .tagline {
+      font-size: 1.4em;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #7b5e1c;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .column {
+      flex: 1;
+      background-color: #fffef9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e4d6a7;
+    }
+
+    .center-column {
+      flex: 2;
+    }
+
     h2 {
       font-size: 2em;
       color: #8b6c1e;
-      margin-top: 40px;
+      margin-top: 0;
     }
 
     ul {
       list-style: none;
       padding: 0;
-      font-size: 1.5em;
-      max-width: 600px;
-      margin: 20px auto;
+      font-size: 1.3em;
     }
 
     li {
       padding: 10px;
-      margin: 5px;
-      background-color: #fffef9;
+      margin: 5px 0;
+      background-color: #fff;
       border: 1px solid #e4d6a7;
       border-radius: 8px;
     }
 
     footer {
       margin-top: 40px;
-      padding: 20px;
-      font-size: 0.9em;
+      padding: 30px;
+      font-size: 1.2em;
+      background-color: #fff;
       color: #7b6e52;
+    }
+
+    footer p {
+      margin: 5px 0;
     }
   </style>
 </head>
@@ -66,22 +100,44 @@
   <header>
     <img src="crown.png" alt="Crown Logo">
     <h1>Welcome to The White Queen</h1>
-    <p>Your stay begins with a royal touch</p>
+    <p class="tagline">Your stay begins with a royal touch</p>
   </header>
 
   <main>
-    <h2>Guests Arriving Today</h2>
-    <ul>
-      <li>Room N1 -- Thomas Müller & Thomas Müller</li>
-      <li>Room N2 -- Claire Dubois & Claire Dubois</li>
-      <li>Room N3 -- Michael Johnson & Michael Johnson</li>
-      <li>Room N4 -- Michael Johnson & Michael Johnson</li>
-    </ul>
+    <div class="column">
+      <h2>House Rules</h2>
+      <ul>
+        <li>No smoking indoors</li>
+        <li>Check-out by 11:00 AM</li>
+        <li>Quiet hours after 10:00 PM</li>
+        <li>Respect other guests</li>
+      </ul>
+    </div>
+
+    <div class="column center-column">
+      <h2>Guests Arriving Today</h2>
+      <ul>
+        <li>Room N1 -- Thomas Müller & Thomas Müller</li>
+        <li>Room N2 -- Claire Dubois & Claire Dubois</li>
+        <li>Room N3 -- Michael Johnson & Michael Johnson</li>
+        <li>Room N4 -- Michael Johnson & Michael Johnson</li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2>Useful Information</h2>
+      <ul>
+        <li>Wi-Fi: TWQueen_Guest / PW: royal123</li>
+        <li>Breakfast: 7–10 AM</li>
+        <li>Emergency: Dial 112</li>
+        <li>Reception: +32 470 84 58 51</li>
+      </ul>
+    </div>
   </main>
 
   <footer>
-    <p>Sint-Jorisstraat 44, 8000 Bruges, Belgium</p>
-    <p>+32 470 84 58 51 | info@thewhitequeen.be</p>
+    <p><strong>Sint-Jorisstraat 44, 8000 Bruges, Belgium</strong></p>
+    <p><strong>+32 470 84 58 51 | info@thewhitequeen.be</strong></p>
   </footer>
 </body>
 </html>
