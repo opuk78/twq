@@ -8,7 +8,7 @@
   <style>
     html, body {
       margin: 0;
-      padding: 1vh 1.5vw;
+      padding: 1vh 2vw;
       width: 100vw;
       height: 100vh;
       font-family: 'Georgia', serif;
@@ -16,43 +16,29 @@
       color: #3a2c1b;
       text-align: center;
       box-sizing: border-box;
-      position: relative;
-      z-index: 0;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: url('crown.png') no-repeat center center;
-      background-size: cover;
-      opacity: 0.08;
-      z-index: -1;
+      overflow: hidden;
     }
 
     header {
       background-color: #fff;
-      padding: 1vh 2vw 0.5vh;
-      border-bottom: 0.3vh solid #d8c690;
+      padding: 2vh 2vw 1vh;
+      border-bottom: 0.5vh solid #d8c690;
     }
 
     header img {
-      width: 5vw;
+      width: 6vw;
       height: auto;
     }
 
     h1 {
-      font-size: 2.8vw;
+      font-size: 3vw;
       margin: 1vh 0 0;
       color: #bfa046;
     }
 
     .tagline {
-      font-size: 1.2vw;
-      margin-top: 0.6vh;
+      font-size: 1.5vw;
+      margin-top: 0.5vh;
       font-weight: bold;
       color: #7b5e1c;
     }
@@ -60,23 +46,22 @@
     main {
       display: flex;
       justify-content: space-between;
-      gap: 1.5vw;
-      padding: 1vh 0;
-      height: 52vh; /* smaller height */
-      max-width: 78vw; /* narrower width */
+      gap: 2vw;
+      padding: 2vh 0;
+      height: 58vh;
+      max-width: 76vw;
       margin: auto;
-      flex-wrap: nowrap;
     }
 
     .column {
       flex: 1;
       background-color: #fffef9;
-      padding: 1.2vh 1.2vw;
-      border-radius: 0.8vw;
-      box-shadow: 0 0.3vh 1vh rgba(0, 0, 0, 0.08);
+      padding: 2vh 1.5vw;
+      border-radius: 1vw;
+      box-shadow: 0 0.4vh 1.2vh rgba(0, 0, 0, 0.1);
       border: 1px solid #e4d6a7;
-      min-width: 18vw;
-      overflow-y: auto;
+      min-width: 20vw;
+      overflow: hidden;
     }
 
     .center-column {
@@ -84,7 +69,7 @@
     }
 
     h2 {
-      font-size: 1.5vw;
+      font-size: 1.8vw;
       color: #8b6c1e;
       margin-top: 0;
     }
@@ -92,33 +77,34 @@
     ul {
       list-style: none;
       padding: 0;
-      font-size: 1.1vw;
+      font-size: 1.4vw;
+      margin: 0;
     }
 
     li {
-      padding: 0.6vh;
-      margin: 0.4vh 0;
+      padding: 1vh;
+      margin: 1vh 0;
       background-color: #fff;
       border: 1px solid #e4d6a7;
-      border-radius: 0.4vw;
+      border-radius: 0.6vw;
     }
 
     table {
       width: 100%;
-      font-size: 1.1vw;
+      font-size: 1.4vw;
       border-collapse: collapse;
     }
 
     table th, table td {
       text-align: left;
-      padding: 0.6vh;
+      padding: 1vh;
       border-bottom: 1px solid #e4d6a7;
     }
 
     footer {
       margin-top: 1.5vh;
       padding: 1vh;
-      font-size: 1vw;
+      font-size: 1.2vw;
       background-color: #fff;
       color: #7b6e52;
     }
