@@ -63,10 +63,16 @@
       border: 1px solid #e4d6a7;
       min-width: 16vw;
       overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .center-column {
       flex: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     h2 {
@@ -103,31 +109,50 @@
     }
 
     .reminder {
-      margin-top: 2vh;
+      margin-top: auto;
       font-weight: bold;
-      font-size: 1.3vw;
+      font-size: 1.2vw;
       color: #7b431c;
+      padding-top: 2vh;
     }
 
     footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
       width: 100%;
-      padding: 1vh 2vw;
+      padding: 2vh 4vw 1.5vh;
       font-size: 1.1vw;
       background-color: #fff;
       color: #7b6e52;
       border-top: 0.4vh solid #d8c690;
+      box-sizing: border-box;
     }
 
-    footer p {
-      margin: 0.5vh 0;
-      font-weight: bold;
+    .footer-left, .footer-right {
+      flex: 1;
+      min-width: 40%;
+    }
+
+    .footer-left {
+      text-align: left;
+    }
+
+    .footer-right {
+      text-align: right;
     }
 
     .review {
-      margin-top: 1.2vh;
-      font-size: 0.95vw;
+      font-size: 1.1vw;
       color: #6a604d;
-      font-weight: normal;
+    }
+
+    .stars {
+      color: #f4b400;
+      font-size: 1.3vw;
+      letter-spacing: 0.2vw;
+      margin-bottom: 0.3vh;
     }
   </style>
 </head>
@@ -150,33 +175,35 @@
     </div>
 
     <div class="column center-column">
-      <h2>Guests Arriving Today</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Room</th>
-            <th>Guests</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Room N1</td>
-            <td>Thomas Müller & Toto</td>
-          </tr>
-          <tr>
-            <td>Room N2</td>
-            <td>Claire Dubois & Mimi</td>
-          </tr>
-          <tr>
-            <td>Room N3</td>
-            <td>Michael Johnson & Michael Johnson</td>
-          </tr>
-          <tr>
-            <td>Room N4</td>
-            <td>Michael Johnson & Michael Johnson</td>
-          </tr>
-        </tbody>
-      </table>
+      <div>
+        <h2>Guests Arriving Today</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Room</th>
+              <th>Guests</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Room N1</td>
+              <td>Thomas Müller & Toto</td>
+            </tr>
+            <tr>
+              <td>Room N2</td>
+              <td>Claire Dubois & Mimi</td>
+            </tr>
+            <tr>
+              <td>Room N3</td>
+              <td>Michael Johnson & Michael Johnson</td>
+            </tr>
+            <tr>
+              <td>Room N4</td>
+              <td>Michael Johnson & Michael Johnson</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p class="reminder">Dear guests, please do not lock the entrance door with the key — just gently shut it. Thank you!</p>
     </div>
 
@@ -192,10 +219,15 @@
   </main>
 
   <footer>
-    <p><strong>📍 Sint-Jorisstraat 44, 8000 Bruges, Belgium</strong></p>
-    <p><strong>📞 +32 470 84 58 51 &nbsp;&nbsp;✉️ info@thewhitequeen.be</strong></p>
-    <p class="review">⭐⭐⭐⭐⭐ We hope you enjoyed your stay!<br>
-    We would truly appreciate your review and look forward to welcoming you again soon.</p>
+    <div class="footer-left">
+      <div class="stars">★★★★★</div>
+      <p class="review">We hope you enjoyed your stay!<br>
+      We would truly appreciate your review and hope to see you again soon.</p>
+    </div>
+    <div class="footer-right">
+      <p><strong>📍 Sint-Jorisstraat 44, 8000 Bruges, Belgium</strong></p>
+      <p><strong>📞 +32 470 84 58 51 &nbsp;&nbsp;✉️ info@thewhitequeen.be</strong></p>
+    </div>
   </footer>
 </body>
 </html>
