@@ -1,265 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Welcome to The White Queen B&B</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content="60" />
+html, body {
+  font-family: 'Playfair Display', serif;
+  background-color: #fff8f0;
+  color: #3a2c1b;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+header {
+  width: 100%;
+  background-color: #fff;
+  padding: 1vh 2vw 0.5vh;
+  border-bottom: 0.3vh solid #d8c690;
+}
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      font-family: 'Playfair Display', serif;
-      background-color: #fff8f0;
-      color: #3a2c1b;
-      text-align: center;
-      box-sizing: border-box;
-      overflow: hidden;
-    }
+header img {
+  width: 4vw;
+  height: auto;
+}
 
-    header {
-      width: 100%;
-      background-color: #fff;
-      padding: 2vh 2vw 1vh;
-      border-bottom: 0.4vh solid #d8c690;
-    }
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2vw;      /* smaller */
+  margin: 0.5vh 0 0;
+  color: #bfa046;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-shadow: 1px 1px 2px rgba(191, 160, 70, 0.6);
+}
 
-    header img {
-      width: 5vw;
-      height: auto;
-    }
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 1vw;     /* smaller */
+  margin-top: 0.3vh;
+  font-weight: 600;
+  font-style: italic;
+  color: #7b5e1c;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px rgba(123, 94, 28, 0.5);
+}
 
-    h1 {
-      font-family: 'Cinzel', serif;
-      font-size: 3vw;
-      margin: 1vh 0 0;
-      color: #bfa046;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-shadow: 2px 2px 3px rgba(191, 160, 70, 0.6);
-    }
+main {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  padding: 1.5vh 2vw;
+  height: 45vh;   /* reduced height */
+  max-width: 90vw;
+  margin: auto;
+}
 
-    .tagline {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5vw;
-      margin-top: 0.5vh;
-      font-weight: 600;
-      font-style: italic;
-      color: #7b5e1c;
-      letter-spacing: 0.15em;
-      text-shadow: 1px 1px 1px rgba(123, 94, 28, 0.5);
-    }
+.column {
+  flex: 1;
+  background-color: #fffef9;
+  padding: 1vh 1vw;
+  border-radius: 0.8vw;
+  box-shadow: 0 0.2vh 0.6vh rgba(0, 0, 0, 0.08);
+  border: 1px solid #e4d6a7;
+  min-width: 16vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
-    main {
-      display: flex;
-      justify-content: center;
-      gap: 1.5vw;
-      padding: 2vh 2vw;
-      height: 60vh;
-      max-width: 90vw;
-      margin: auto;
-    }
+.center-column {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    .column {
-      flex: 1;
-      background-color: #fffef9;
-      padding: 1.5vh 1.2vw;
-      border-radius: 0.8vw;
-      box-shadow: 0 0.3vh 1vh rgba(0, 0, 0, 0.08);
-      border: 1px solid #e4d6a7;
-      min-width: 16vw;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3vw;    /* smaller */
+  color: #8b6c1e;
+  margin-top: 0;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-shadow: 1px 1px 1.5px rgba(191, 160, 70, 0.5);
+}
 
-    .center-column {
-      flex: 3;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9vw;   /* smaller */
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: #4b3a12;
+}
 
-    h2 {
-      font-family: 'Cinzel', serif;
-      font-size: 2vw;
-      color: #8b6c1e;
-      margin-top: 0;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-shadow: 1px 1px 2px rgba(191, 160, 70, 0.5);
-    }
+li {
+  padding: 0.6vh;
+  margin: 0.5vh 0;
+  background-color: #fff;
+  border: 1px solid #e4d6a7;
+  border-radius: 0.4vw;
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.3vw;
-      margin: 0;
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-      color: #4b3a12;
-    }
+table {
+  width: 100%;
+  font-size: 1vw;     /* smaller */
+  border-collapse: collapse;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: #4b3a12;
+}
 
-    li {
-      padding: 0.8vh;
-      margin: 0.8vh 0;
-      background-color: #fff;
-      border: 1px solid #e4d6a7;
-      border-radius: 0.5vw;
-    }
+table th, table td {
+  text-align: left;
+  padding: 0.6vh;
+  border-bottom: 1px solid #e4d6a7;
+}
 
-    table {
-      width: 100%;
-      font-size: 1.3vw;
-      border-collapse: collapse;
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-      color: #4b3a12;
-    }
+.reminder {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 1vw;     /* smaller */
+  color: #7b431c;
+  padding-top: 1.5vh;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.04em;
+  text-shadow: 1px 1px 1px rgba(123, 67, 28, 0.5);
+}
 
-    table th, table td {
-      text-align: left;
-      padding: 0.8vh;
-      border-bottom: 1px solid #e4d6a7;
-    }
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1.5vh 4vw 1vh;
+  font-size: 0.9vw;   /* smaller */
+  background-color: #fff;
+  color: #7b6e52;
+  border-top: 0.3vh solid #d8c690;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
 
-    .reminder {
-      margin-top: auto;
-      font-weight: 700;
-      font-size: 1.3vw;
-      color: #7b431c;
-      padding-top: 2vh;
-      font-family: 'Cinzel', serif;
-      letter-spacing: 0.05em;
-      text-shadow: 1px 1px 1px rgba(123, 67, 28, 0.5);
-    }
+.footer-left, .footer-right {
+  flex: 1;
+  min-width: 40%;
+}
 
-    footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      width: 100%;
-      padding: 2vh 4vw 1.5vh;
-      font-size: 1.2vw;
-      background-color: #fff;
-      color: #7b6e52;
-      border-top: 0.4vh solid #d8c690;
-      box-sizing: border-box;
-      font-family: 'Playfair Display', serif;
-    }
+.footer-left {
+  text-align: left;
+}
 
-    .footer-left, .footer-right {
-      flex: 1;
-      min-width: 40%;
-    }
+.footer-right {
+  text-align: right;
+  font-weight: 700;
+  color: #5a4c1a;
+}
 
-    .footer-left {
-      text-align: left;
-    }
+.review {
+  font-size: 0.9vw;    /* smaller */
+  color: #6a604d;
+  font-style: italic;
+  font-weight: 500;
+}
 
-    .footer-right {
-      text-align: right;
-      font-weight: 700;
-      color: #5a4c1a;
-    }
-
-    .review {
-      font-size: 1.2vw;
-      color: #6a604d;
-      font-style: italic;
-      font-weight: 500;
-    }
-
-    .stars {
-      color: #f4b400;
-      font-size: 1.5vw;
-      letter-spacing: 0.3vw;
-      margin-bottom: 0.3vh;
-      text-shadow: 1px 1px 1px rgba(244, 180, 0, 0.7);
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="crown.png" alt="The White Queen B&B Crown Logo" />
-    <h1>Welcome to The White Queen B&B</h1>
-    <p class="tagline">Your stay begins with a touch of magic in Bruges</p>
-  </header>
-
-  <main>
-    <div class="column">
-      <h2>House Rules</h2>
-      <ul>
-        <li>No smoking indoors</li>
-        <li>Check-out by 11:00 AM</li>
-        <li>Quiet hours after 10:00 PM</li>
-        <li>Respect other guests</li>
-      </ul>
-    </div>
-
-    <div class="column center-column">
-      <div>
-        <h2>Guests Arriving Today</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Room</th>
-              <th>Guests</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Room N1</td>
-              <td>Thomas Müller &amp; Toto</td>
-            </tr>
-            <tr>
-              <td>Room N2</td>
-              <td>Claire Dubois &amp; Mimi</td>
-            </tr>
-            <tr>
-              <td>Room N3</td>
-              <td>Michael Johnson &amp; Michael Johnson</td>
-            </tr>
-            <tr>
-              <td>Room N4</td>
-              <td>Michael Johnson &amp; Michael Johnson</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="reminder">Dear guests, please do not lock the entrance door with the key — just gently shut it. Thank you!</p>
-    </div>
-
-    <div class="column">
-      <h2>Information</h2>
-      <ul>
-        <li>Wi-Fi code: TheWhiteQueenWifi</li>
-        <li>Breakfast: 8:30–10:00</li>
-        <li>Emergency: Dial 112</li>
-        <li>Taxi: +32 475 57 60 15</li>
-      </ul>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-left">
-      <div class="stars">★★★★★</div>
-      <p class="review">
-        We hope you enjoyed your stay!<br />
-        We would truly appreciate your review and hope to see you again soon.
-      </p>
-    </div>
-    <div class="footer-right">
-      <p><strong>Sint-Jorisstraat 44, 8000 Bruges, Belgium</strong></p>
-      <p><strong>+32 470 84 58 51 &nbsp;&nbsp; info@thewhitequeen.be</strong></p>
-    </div>
-  </footer>
-</body>
-</html>
+.stars {
+  color: #f4b400;
+  font-size: 1.2vw;   /* smaller */
+  letter-spacing: 0.2vw;
+  margin-bottom: 0.2vh;
+  text-shadow: 1px 1px 1px rgba(244, 180, 0, 0.7);
+}
