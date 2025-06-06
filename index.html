@@ -11,25 +11,26 @@
 
   <style>
     html, body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Playfair Display', serif;
-  background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png'); /* Change URL for better quality if desired */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  color: #3a2c1b;
-  text-align: center;
-  box-sizing: border-box;
-  overflow: hidden;
-}
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      font-family: 'Playfair Display', serif;
+      background-image: url('https://www.transparenttextures.com/patterns/old-map.png');
+      background-color: #fff8f0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      color: #3a2c1b;
+      text-align: center;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
 
     header {
       width: 100%;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.9);
       padding: 2vh 2vw 1vh;
       border-bottom: 0.4vh solid #d8c690;
     }
@@ -41,7 +42,7 @@
 
     h1 {
       font-family: 'Cinzel', serif;
-      font-size: 2.4vw; /* smaller */
+      font-size: 2.6vw;
       margin: 1vh 0 0;
       color: #bfa046;
       font-weight: 700;
@@ -51,7 +52,7 @@
 
     .tagline {
       font-family: 'Playfair Display', serif;
-      font-size: 1.2vw; /* smaller */
+      font-size: 1.3vw;
       margin-top: 0.5vh;
       font-weight: 600;
       font-style: italic;
@@ -72,7 +73,7 @@
 
     .column {
       flex: 1;
-      background-color: #fffef9;
+      background-color: rgba(255, 254, 249, 0.95);
       padding: 1.5vh 1.2vw;
       border-radius: 0.8vw;
       box-shadow: 0 0.3vh 1vh rgba(0, 0, 0, 0.08);
@@ -92,7 +93,7 @@
 
     h2 {
       font-family: 'Cinzel', serif;
-      font-size: 1.6vw; /* smaller */
+      font-size: 1.73vw;
       color: #8b6c1e;
       margin-top: 0;
       font-weight: 700;
@@ -103,7 +104,7 @@
     ul {
       list-style: none;
       padding: 0;
-      font-size: 1.1vw; /* smaller */
+      font-size: 1.19vw;
       margin: 0;
       font-family: 'Playfair Display', serif;
       font-weight: 500;
@@ -120,7 +121,7 @@
 
     table {
       width: 100%;
-      font-size: 1.1vw; /* smaller */
+      font-size: 1.19vw;
       border-collapse: collapse;
       font-family: 'Playfair Display', serif;
       font-weight: 500;
@@ -136,7 +137,7 @@
     .reminder {
       margin-top: auto;
       font-weight: 700;
-      font-size: 1.1vw; /* smaller */
+      font-size: 1.19vw;
       color: #7b431c;
       padding-top: 2vh;
       font-family: 'Cinzel', serif;
@@ -151,8 +152,8 @@
       flex-wrap: wrap;
       width: 100%;
       padding: 2vh 4vw 1.5vh;
-      font-size: 1vw; /* smaller */
-      background-color: #fff;
+      font-size: 1.08vw;
+      background-color: rgba(255, 255, 255, 0.9);
       color: #7b6e52;
       border-top: 0.4vh solid #d8c690;
       box-sizing: border-box;
@@ -175,7 +176,7 @@
     }
 
     .review {
-      font-size: 1vw; /* smaller */
+      font-size: 1.08vw;
       color: #6a604d;
       font-style: italic;
       font-weight: 500;
@@ -183,7 +184,7 @@
 
     .stars {
       color: #f4b400;
-      font-size: 1.2vw; /* smaller */
+      font-size: 1.3vw;
       letter-spacing: 0.3vw;
       margin-bottom: 0.3vh;
       text-shadow: 1px 1px 1px rgba(244, 180, 0, 0.7);
@@ -219,24 +220,23 @@
             </tr>
           </thead>
           <tbody>
-  <tr>
-    <td>Room N1</td>
-    <td>Thomas Müller and Toto</td>
-  </tr>
-  <tr>
-    <td>Room N2</td>
-    <td>Claire Dubois and Mimi</td>
-  </tr>
-  <tr>
-    <td>Room N3</td>
-    <td>Michael Johnson and Michael Johnson</td>
-  </tr>
-  <tr>
-    <td>Room N4</td>
-    <td>Michael Johnson and Michael Johnson</td>
-  </tr>
-</tbody>
-
+            <tr>
+              <td>Room N1</td>
+              <td>Thomas Müller and Toto</td>
+            </tr>
+            <tr>
+              <td>Room N2</td>
+              <td>Claire Dubois and Mimi</td>
+            </tr>
+            <tr>
+              <td>Room N3</td>
+              <td>Michael Johnson and Michael Johnson</td>
+            </tr>
+            <tr>
+              <td>Room N4</td>
+              <td>Michael Johnson and Michael Johnson</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <p class="reminder">Dear guests, please do not lock the entrance door with the key — just gently shut it. Thank you!</p>
