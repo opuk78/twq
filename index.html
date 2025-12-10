@@ -270,5 +270,16 @@
       <p><strong>+32 470 84 58 51 &nbsp;&nbsp; info@thewhitequeen.be</strong></p>
     </div>
   </footer>
+  <script>
+window.addEventListener("load", function () {
+  const today = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const dateSpan = document.getElementById("today-date");
+  if (dateSpan) {
+    dateSpan.textContent = today.toLocaleDateString(undefined, options);
+  }
+});
+</script>
+
 </body>
 </html>
