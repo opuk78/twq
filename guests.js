@@ -3,5 +3,5 @@ const guestRows = [
   { room: 'Room N2', guest: 'Samantha' },
   { room: 'Room N3', guest: 'Andrej' },
   { room: 'Room N4', guest: 'Caroline' },
-  { room: 'Prinsezzin', guest: '' }
+  { room: 'Prinsezzin', guest: 'Toto' }
 ];
