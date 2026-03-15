@@ -1,331 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Welcome to The White Queen B&B</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="refresh" content="60" />
+<meta charset="UTF-8" />
+<title>Welcome to The White Queen B&B</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="refresh" content="60" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      font-family: 'Playfair Display', serif;
-      background-image: url('https://www.transparenttextures.com/patterns/old-map.png');
-      background-color: #fff8f0;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      color: #3a2c1b;
-      text-align: center;
-      box-sizing: border-box;
-      overflow: hidden;
-    }
+<style>
+html, body {
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:100vh;
+  font-family:'Playfair Display',serif;
+  background-image:url('https://www.transparenttextures.com/patterns/old-map.png');
+  background-color:#fff8f0;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-attachment:fixed;
+  color:#3a2c1b;
+  text-align:center;
+  box-sizing:border-box;
+  overflow:hidden;
+}
 
-    header {
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 2vh 2vw 1vh;
-      border-bottom: 0.4vh solid #d8c690;
-    }
+header{
+  width:100%;
+  background-color:rgba(255,255,255,0.9);
+  padding:1.6vh 2vw 0.8vh;
+  border-bottom:0.4vh solid #d8c690;
+}
 
-    header img {
-      width: 5vw;
-      height: auto;
-    }
+header img{
+  width:5vw;
+  height:auto;
+}
 
-    h1 {
-      font-family: 'Cinzel', serif;
-      font-size: 2.6vw;
-      margin: 1vh 0 0;
-      color: #bfa046;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-shadow: 2px 2px 3px rgba(191, 160, 70, 0.6);
-    }
+h1{
+  font-family:'Cinzel',serif;
+  font-size:2.6vw;
+  margin:1vh 0 0;
+  color:#bfa046;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-shadow:2px 2px 3px rgba(191,160,70,0.6);
+}
 
-    .tagline {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3vw;
-      margin-top: 0.5vh;
-      font-weight: 600;
-      font-style: italic;
-      color: #7b5e1c;
-      letter-spacing: 0.15em;
-      text-shadow: 1px 1px 1px rgba(123, 94, 28, 0.5);
-    }
+.tagline{
+  font-family:'Playfair Display',serif;
+  font-size:1.3vw;
+  margin-top:0.5vh;
+  font-weight:600;
+  font-style:italic;
+  color:#7b5e1c;
+  letter-spacing:0.15em;
+  text-shadow:1px 1px 1px rgba(123,94,28,0.5);
+}
 
-    main {
-      display: flex;
-      justify-content: center;
-      gap: 1.5vw;
-      padding: 2vh 2vw;
-      height: 60vh;
-      max-width: 90vw;
-      margin: auto;
-    }
+main{
+  display:flex;
+  justify-content:center;
+  gap:1.5vw;
+  padding:1.6vh 2vw;
+  height:57vh;
+  max-width:90vw;
+  margin:auto;
+}
 
-    .column {
-      flex: 1;
-      background-color: rgba(255, 254, 249, 0.95);
-      padding: 1.5vh 1.2vw;
-      border-radius: 0.8vw;
-      box-shadow: 0 0.3vh 1vh rgba(0, 0, 0, 0.08);
-      border: 1px solid #e4d6a7;
-      min-width: 16vw;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
+.column{
+  flex:1;
+  background-color:rgba(255,254,249,0.95);
+  padding:1.5vh 1.2vw;
+  border-radius:0.8vw;
+  box-shadow:0 0.3vh 1vh rgba(0,0,0,0.08);
+  border:1px solid #e4d6a7;
+  min-width:16vw;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
 
-    .center-column {
-      flex: 3;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+.center-column{
+  flex:3;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
 
-    h2 {
-      font-family: 'Cinzel', serif;
-      font-size: 1.73vw;
-      color: #8b6c1e;
-      margin-top: 0;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-shadow: 1px 1px 2px rgba(191, 160, 70, 0.5);
-    }
+h2{
+  font-family:'Cinzel',serif;
+  font-size:1.73vw;
+  color:#8b6c1e;
+  margin-top:0;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-shadow:1px 1px 2px rgba(191,160,70,0.5);
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.19vw;
-      margin: 0;
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-      color: #4b3a12;
-    }
+ul{
+  list-style:none;
+  padding:0;
+  font-size:1.19vw;
+  margin:0;
+  font-family:'Playfair Display',serif;
+  font-weight:500;
+  color:#4b3a12;
+}
 
-    li {
-      padding: 0.8vh;
-      margin: 0.8vh 0;
-      background-color: #fff;
-      border: 1px solid #e4d6a7;
-      border-radius: 0.5vw;
-    }
+li{
+  padding:0.8vh;
+  margin:0.8vh 0;
+  background-color:#fff;
+  border:1px solid #e4d6a7;
+  border-radius:0.5vw;
+}
 
-    table {
-      width: 100%;
-      font-size: 1.19vw;
-      border-collapse: collapse;
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-      color: #4b3a12;
-    }
+table{
+  width:100%;
+  font-size:1.19vw;
+  border-collapse:collapse;
+  font-family:'Playfair Display',serif;
+  font-weight:500;
+  color:#4b3a12;
+}
 
-    table th, table td {
-      text-align: left;
-      padding: 0.8vh;
-      border-bottom: 1px solid #e4d6a7;
-    }
+table th, table td{
+  text-align:left;
+  padding:0.8vh;
+  border-bottom:1px solid #e4d6a7;
+}
 
-    .reminder {
-      margin-top: auto;
-      font-weight: 700;
-      font-size: 1.19vw;
-      color: #7b431c;
-      padding-top: 2vh;
-      font-family: 'Cinzel', serif;
-      letter-spacing: 0.05em;
-      text-shadow: 1px 1px 1px rgba(123, 67, 28, 0.5);
-    }
+.reminder{
+  margin-top:auto;
+  font-weight:700;
+  font-size:1.19vw;
+  color:#7b431c;
+  padding-top:2vh;
+  font-family:'Cinzel',serif;
+  letter-spacing:0.05em;
+  text-shadow:1px 1px 1px rgba(123,67,28,0.5);
+}
 
-    footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      width: 100%;
-      padding: 2vh 4vw 1.5vh;
-      font-size: 1.5vw;
-      background-color: rgba(255, 255, 255, 0.9);
-      color: #7b6e52;
-      border-top: 0.4vh solid #d8c690;
-      box-sizing: border-box;
-      font-family: 'Playfair Display', serif;
-    }
+footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  width:100%;
+  padding:1.6vh 4vw 1.2vh;
+  font-size:1.5vw;
+  background-color:rgba(255,255,255,0.9);
+  color:#7b6e52;
+  border-top:0.4vh solid #d8c690;
+  box-sizing:border-box;
+  font-family:'Playfair Display',serif;
+}
 
-    .footer-left, .footer-right {
-      flex: 1;
-      min-width: 40%;
-    }
+.footer-left,.footer-right{
+  flex:1;
+  min-width:40%;
+}
 
-    .footer-left {
-      text-align: left;
-    }
+.footer-left{
+  text-align:left;
+}
 
-    .footer-right {
-      text-align: right;
-      font-weight: 700;
-      color: #5a4c1a;
-    }
+.footer-right{
+  text-align:right;
+  font-weight:700;
+  color:#5a4c1a;
+}
 
-    .review {
-      font-size: 1.08vw;
-      color: #6a604d;
-      font-style: italic;
-      font-weight: 500;
-      white-space: pre-line;
-    }
+.review{
+  font-size:1.08vw;
+  color:#6a604d;
+  font-style:italic;
+  font-weight:500;
+  white-space:pre-line;
+}
 
-    .loading-row td,
-    .error-row td,
-    .empty-row td {
-      text-align: center;
-      color: #7b5e1c;
-      font-style: italic;
-    }
-  </style>
+.loading-row td,
+.error-row td,
+.empty-row td{
+  text-align:center;
+  color:#7b5e1c;
+  font-style:italic;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <img src="crown.png" alt="The White Queen B&B Crown Logo" />
-    <h1>Welcome to The White Queen B&B</h1>
-    <p class="tagline">Your stay begins with a touch of magic in Bruges</p>
-  </header>
 
-  <main>
-    <div class="column">
-      <h2>All guests of our hotel receive a 10% loyalty discount for their stay at our hotel P6 in Antwerp</h2>
-      <ul>
-        <li>+32470895482</li>
-        <li>info@p6-antwerp.be</li>
-      </ul>
-    </div>
+<header>
+<img src="crown.png" alt="The White Queen B&B Crown Logo"/>
+<h1>Welcome to The White Queen B&B</h1>
+<p class="tagline">Your stay begins with a touch of magic in Bruges</p>
+</header>
 
-    <div class="column center-column">
-      <div>
-        <h2>Guests Arriving Today – <span id="today-date"></span></h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Room</th>
-              <th>Guests</th>
-            </tr>
-          </thead>
-          <tbody id="guest-table-body">
-            <tr class="loading-row">
-              <td colspan="2">Loading guest names...</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="reminder">Please do not lock the entrance door with the key — just gently shut it. Please check if your reservation includes breakfast, as it’s not always included. Thank you!</p>
-    </div>
+<main>
 
-    <div class="column">
-      <h2>Information</h2>
-      <ul>
-        <li>Wi-Fi code: TheWhiteQueenWifi</li>
-        <li>Breakfast: 8:30–10:00</li>
-        <li>Emergency: Dial 112</li>
-        <li>Taxi: +32 475 57 60 15</li>
-        <li>No smoking indoors</li>
-        <li>Check-out by 11:00 AM</li>
-      </ul>
-    </div>
-  </main>
+<div class="column">
+<h2>All guests of our hotel receive a 10% loyalty discount for their stay at our hotel P6 in Antwerp</h2>
+<ul>
+<li>+32470895482</li>
+<li>info@p6-antwerp.be</li>
+</ul>
+</div>
 
-  <footer>
-    <div class="footer-left">
-      <p class="review">Dear Guest,
+<div class="column center-column">
+
+<div>
+<h2>Guests Arriving Today – <span id="today-date"></span></h2>
+
+<table>
+<thead>
+<tr>
+<th>Room</th>
+<th>Guests</th>
+</tr>
+</thead>
+
+<tbody id="guest-table-body">
+<tr class="loading-row">
+<td colspan="2">Loading guest names...</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="reminder">
+Please do not lock the entrance door with the key — just gently shut it. Please check if your reservation includes breakfast, as it’s not always included. Thank you!
+</p>
+
+</div>
+
+<div class="column">
+<h2>Information</h2>
+<ul>
+<li>Wi-Fi code: TheWhiteQueenWifi</li>
+<li>Breakfast: 8:30–10:00</li>
+<li>Emergency: Dial 112</li>
+<li>Taxi: +32 475 57 60 15</li>
+<li>No smoking indoors</li>
+<li>Check-out by 11:00 AM</li>
+</ul>
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-left">
+<p class="review">
+Dear Guest,
 Our current rating on Booking.com is 9.1
 Only a 10 helps us improve it.
 Any lower rating reduces our overall score.
 If you were fully satisfied with your stay, we would truly appreciate your support.
-Thank you!</p>
-    </div>
-    <div class="footer-right">
-      <p><strong>Sint-Jorisstraat 44, 8000 Bruges, Belgium</strong></p>
-      <p><strong>+32 470 84 58 51 &nbsp;&nbsp; info@thewhitequeen.be</strong></p>
-    </div>
-  </footer>
+Thank you!
+</p>
+</div>
 
-  <script>
-    const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbwoZI6cPJuzNBvzapiUC0VrrGHOhGaVG74172WK1vxXXGyypPjq0td2Y1FDB1auS3WniA/exec";
+<div class="footer-right">
+<p><strong>Sint-Jorisstraat 44, 8000 Bruges, Belgium</strong></p>
+<p><strong>+32 470 84 58 51 &nbsp;&nbsp; info@thewhitequeen.be</strong></p>
+</div>
 
-    function escapeHtml(value) {
-      return String(value ?? "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/\"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
+</footer>
 
-    function renderGuestTable(guestRows) {
-      const tbody = document.getElementById("guest-table-body");
-      if (!tbody) return;
+<script>
 
-      if (!Array.isArray(guestRows) || guestRows.length === 0) {
-        tbody.innerHTML = `
-          <tr class="empty-row">
-            <td colspan="2">No guest names found.</td>
-          </tr>
-        `;
-        return;
-      }
+const SHEET_API_URL="https://script.google.com/macros/s/AKfycbwoZI6cPJuzNBvzapiUC0VrrGHOhGaVG74172WK1vxXXGyypPjq0td2Y1FDB1auS3WniA/exec";
 
-      tbody.innerHTML = guestRows.map(row => `
-        <tr>
-          <td>${escapeHtml(row.room || "")}</td>
-          <td>${escapeHtml(row.guest || "")}</td>
-        </tr>
-      `).join("");
-    }
+function escapeHtml(value){
+return String(value ?? "")
+.replace(/&/g,"&amp;")
+.replace(/</g,"&lt;")
+.replace(/>/g,"&gt;")
+.replace(/\"/g,"&quot;")
+.replace(/'/g,"&#039;");
+}
 
-    function showGuestLoadError() {
-      const tbody = document.getElementById("guest-table-body");
-      if (!tbody) return;
+function renderGuestTable(guestRows){
 
-      tbody.innerHTML = `
-        <tr class="error-row">
-          <td colspan="2">Unable to load guest names.</td>
-        </tr>
-      `;
-    }
+const tbody=document.getElementById("guest-table-body");
 
-    async function loadGuestRows() {
-      try {
-        const response = await fetch(SHEET_API_URL, { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error("HTTP " + response.status);
-        }
+if(!tbody) return;
 
-        const guestRows = await response.json();
-        renderGuestTable(guestRows);
-      } catch (error) {
-        console.error("Failed to load guest names:", error);
-        showGuestLoadError();
-      }
-    }
+if(!Array.isArray(guestRows)||guestRows.length===0){
 
-    window.addEventListener("load", function () {
-      const today = new Date();
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      const dateSpan = document.getElementById("today-date");
+tbody.innerHTML=`
+<tr class="empty-row">
+<td colspan="2">No guest names found.</td>
+</tr>
+`;
 
-      if (dateSpan) {
-        dateSpan.textContent = today.toLocaleDateString(undefined, options);
-      }
+return;
+}
 
-      loadGuestRows();
-    });
-  </script>
+tbody.innerHTML=guestRows.map(row=>`
+<tr>
+<td>${escapeHtml(row.room||"")}</td>
+<td>${escapeHtml(row.guest||"")}</td>
+</tr>
+`).join("");
+
+}
+
+function showGuestLoadError(){
+
+const tbody=document.getElementById("guest-table-body");
+
+if(!tbody) return;
+
+tbody.innerHTML=`
+<tr class="error-row">
+<td colspan="2">Unable to load guest names.</td>
+</tr>
+`;
+
+}
+
+async function loadGuestRows(){
+
+try{
+
+const response=await fetch(SHEET_API_URL,{cache:"no-store"});
+
+if(!response.ok){
+throw new Error("HTTP "+response.status);
+}
+
+const guestRows=await response.json();
+
+renderGuestTable(guestRows);
+
+}catch(error){
+
+console.error("Failed to load guest names:",error);
+
+showGuestLoadError();
+
+}
+
+}
+
+window.addEventListener("load",function(){
+
+const today=new Date();
+
+const options={year:"numeric",month:"long",day:"numeric"};
+
+const dateSpan=document.getElementById("today-date");
+
+if(dateSpan){
+dateSpan.textContent=today.toLocaleDateString(undefined,options);
+}
+
+loadGuestRows();
+
+});
+
+</script>
+
 </body>
 </html>
